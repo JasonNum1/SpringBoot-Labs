@@ -15,19 +15,19 @@ spring:
           url: jdbc:mysql://127.0.0.1:3306/seata_order?useSSL=false&useUnicode=true&characterEncoding=UTF-8
           driver-class-name: com.mysql.jdbc.Driver
           username: root
-          password:
+          password: jiwenlong
         # 账户 pay 数据源配置
         account-ds:
           url: jdbc:mysql://127.0.0.1:3306/seata_account?useSSL=false&useUnicode=true&characterEncoding=UTF-8
           driver-class-name: com.mysql.jdbc.Driver
           username: root
-          password:
+          password: jiwenlong
         # 商品 product 数据源配置
         product-ds:
           url: jdbc:mysql://127.0.0.1:3306/seata_product?useSSL=false&useUnicode=true&characterEncoding=UTF-8
           driver-class-name: com.mysql.jdbc.Driver
           username: root
-          password:
+          password: jiwenlong
       seata: true # 是否启动对 Seata 的集成
 
 # Seata 配置项，对应 SeataProperties 类
@@ -41,4 +41,4 @@ seata:
       multi-datasource-service-group: default
     # 分组和 Seata 服务的映射
     grouplist:
-      default: 127.0.0.1:8091
+      default: 192.168.0.140:8091
